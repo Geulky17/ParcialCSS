@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Primer Parcial</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+		<!-- Load an icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+		
+	</head>
+	<body>
+		<div id="navbar">
+			<a href="index.html"><i class="fa fa-fw fa-home"></i> Portada</a>
+			<a href="historia.html"><i class="fa fa-fw fa-newspaper-o"></i> Historia</a>
+			<a id="active" href="productos.html"><i class="fa fa-fw fa-product-hunt"></i> Productos</a>
+			<a href="categorias.html"><i class="fa fa-fw fa-angellist"></i> Categorias</a>
+			<a href="contacto.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a>
+		</div>		
+
+		<h2 style="text-align:center">Nuestros Productos</h2>
+
+        <div class="card">
+        <img src="images\img4.jpg" style="width:100%">
+        <h1>Lorem ipsum dolor</h1>
+        <p class="price">$19.99</p>
+        <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do adipiscing el eiusmod tempor</p>
+        <p><button>Add to Cart</button></p>
+        </div>
+
+		<div class="footer"><i class="fa fa-copyright" aria-hidden="true"></i><strong>Geulky Buret Marte 2015-2701</strong></div>
+
+		<script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function() {
+				var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos > currentScrollPos) {
+				document.getElementById("navbar").style.top = "0";
+				} else {
+				document.getElementById("navbar").style.top = "-50px";
+				}
+				prevScrollpos = currentScrollPos;
+			}
+		</script>	
+	</body>
+</html>
